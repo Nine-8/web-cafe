@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {}
+
+.header {
+    position: fixed;
+    z-index: 100000;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header-content {
+    display: flex;
+    max-width: 2240px;
+    width: 100%;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    width: 100px;
+    border: none;
+}
+
+.menu-top {
+    padding-top: 25px;
+    flex: 9;
+    margin-left: 20px;
+    height: 50px;
+}
+
+.menu-top>ul>li {
+    float: left;
+    position: relative;
+    margin-left: 38px;
+}
+
+.menu-top ul li a {
+    text-decoration: none !important;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+
+.menu-top:hover .sub-menu {
+    display: block;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.menu-top ul>li :hover {
+    border-bottom: #EA8025 solid 2px;
+}
+
+.sub-menu {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    display: none;
+    background-color: white;
+    margin-left: -10px;
+}
+
+.sub-menu li {
+    margin-top: 20px;
+    display: block;
+    background-color: white;
+    width: 200px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.sub-menu li a {
+    display: block;
+}
+
+.menu-pic {
+    margin-top: 10px;
+}
+
+.menu-pic img {
+    width: 1000px;
+    height: 1000px;
+}
+
+.product-content {
+    display: flex;
+}
+
+.product-list {}
+
+.product-menu {
+    margin-top: 50px;
+}
+
+.menu-item-info {
+    margin-top: 10px;
+}
+
+.menu-item-info h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.menu-item-info h3 a {
+    font-size: 24px;
+    text-decoration: none !important;
+    color: #644528;
+}
+
+.price_product_item {
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+    color: #EA8025;
+    margin-bottom: 10px;
+}
+
+.menu-item-info .btn-1 {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: bolder;
+}
+
+.logo-product img {
+    height: 512px;
+    width: 341px;
+}
+
+.list-top {
+    display: flex;
+}
+
+.product-1 {
+    flex: 3;
+}
+
+.product-2 {
+    flex: 3;
+    margin-left: 40px;
+}
+
+.product-3 {
+    flex: 3;
+    margin-left: 40px;
+}
+
+.list-bottom {
+    display: flex;
+    margin-top: 30px;
+}
+
+.product-4 {
+    flex: 3;
+}
+
+.product-5 {
+    flex: 3;
+    margin-left: 40px;
+}
+
+.product-6 {
+    flex: 3;
+    margin-left: 40px;
+}
+
+.branc-shop {
+    margin-top: 50px;
+}
+
+.branc {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.branc-content {
+    flex: 5;
+    background-color: #EA8025;
+    color: #fff;
+}
+
+.fix-content {
+    margin: 144px 20px 144px 20px;
+}
+
+.store_slider_title {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.logo-branc {
+    flex: 5;
+}
+
+.logo-branc img {
+    height: 407px;
+    width: 555px;
+}
+
+.desc-shop {
+    background-color: #644528;
+    width: 100%;
+}
+
+.magazing {
+    margin-top: 50px;
+}
+
+.maga-content {
+    display: flex;
+    padding-top: 35px;
+}
+
+.line_after_heading::after {
+    content: '';
+    height: 4px;
+    background: #ffe9e9;
+    width: 60px;
+    display: block;
+}
+
+.line_after_heading_1::after {
+    content: '';
+    height: 4px;
+    background: black;
+    width: 60px;
+    display: block;
+}
+
+.line_after_heading {
+    flex: 8;
+    margin-top: 20px;
+    color: #EA8025;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.line_after_heading_1 {
+    margin-top: 20px;
+    color: #EA8025;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.line_after_heading_2 {
+    font-weight: bolder;
+    flex: 9;
+    margin-top: 20px;
+    color: #EA8025;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+}
+
+.top-product-content {
+    flex: 1;
+    margin-top: 20px;
+    margin-right: 4px;
+}
+
+.more-button-p a {
+    padding-top: 10px;
+    font-size: 12px;
+    text-decoration: none !important;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    display: block;
+}
+
+.more-button-p:hover {
+    background-color: white;
+    border: #644528 solid 2px;
+    text-align: center;
+}
+
+.more-button-p:hover a {
+    color: #644528;
+    font-weight: bolder;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.view-more-maga {
+    flex: 2;
+    margin-top: 20px;
+}
+
+.more-button-p {
+    margin-left: 100px;
+    width: 150px;
+    height: 40px;
+    background-color: #644528;
+    text-align: center;
+    display: inline-block;
+}
+
+.more-button {
+    margin-left: 100px;
+    width: 140px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.more-button a {
+    color: #EA8025;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none !important;
+    padding-top: 13px;
+    font-weight: bolder;
+    display: block;
+}
+
+.more-button:hover {
+    background-color: #644528;
+    border: white solid 2px;
+}
+
+.more-button:hover a {
+    padding-top: 13px;
+    text-decoration: none !important;
+    font-family: 'Ubuntu', sans-serif;
+    color: #EA8025;
+    font-weight: bolder;
+    display: block;
+}
+
+.description {
+    display: flex;
+    height: 285px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.description h3 {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.description a {
+    color: white;
+}
+
+.description p {
+    color: white;
+}
+
+.logo-desc {
+    flex: 2.5;
+}
+
+.logo-desc img {
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.menus {
+    flex: 2.5;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.menus li a {
+    text-decoration: none;
+}
+
+.menus li a:hover {
+    color: white !important;
+}
+
+.contact {
+    flex: 2.5;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+.Social-Network {
+    flex: 2.5;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.mid-maga-content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.mid-content-1 {
+    flex: 7;
+}
+
+.mid-content-2 {
+    flex: 3;
+    margin-left: 33px;
+}
+
+.logo-mid-content-1 {
+    height: 342px;
+    width: 720px;
+    background: url(../img/cach-lam-sua-hat-sen-1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.logo-mid-content-2 {
+    height: 342px;
+    width: 342px;
+    background: url(../img/109501473_878456529227757_6993684636245078299_o.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.mid-content-1 {
+    background-color: #fff;
+}
+
+.mid-content-2 {
+    background-color: #fff;
+}
+
+.content-1>.container>h3>a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.content-2>.container>h3>a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.article_tags {
+    color: #ea8026;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.content-1 {
+    margin-top: 10px;
+}
+
+.content-2 {
+    margin-top: 10px;
+}
+
+.short-desc {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.more-button-2 {
+    width: 140px;
+    height: 50px;
+    background-color: #EA8025;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.more-button-2 a {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none !important;
+    padding-top: 13px;
+    font-weight: bolder;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.more-button-2:hover {
+    background-color: white;
+    border: #644528 solid 2px;
+}
+
+.more-button-2:hover a {
+    padding-top: 13px;
+    text-decoration: none !important;
+    font-family: 'Ubuntu', sans-serif;
+    color: #EA8025;
+    font-weight: bolder;
+    display: block;
+}
+
+.bot-maga-content {
+    display: flex;
+    margin-top: 30px;
+}
+
+.bot-content-1 {
+    flex: 3;
+    background-color: #fff;
+}
+
+.bot-content-2 {
+    flex: 3;
+    margin-left: 37px;
+    background-color: #fff;
+}
+
+.bot-content-3 {
+    flex: 3;
+    margin-left: 37px;
+    background-color: #fff;
+}
+
+.logo-bot-content-1 {
+    height: 164px;
+    width: 341px;
+    background: url(../img/quan-cafe-ngon-nguyen-thai-hoc-20.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.logo-bot-content-2 {
+    height: 164px;
+    width: 341px;
+    background: url(../img/quan-cafe-ngon-dang-van-ngu-1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.logo-bot-content-3 {
+    height: 164px;
+    width: 341px;
+    background: url(../img/quan-cafe-ngon-dep-doi-can-10.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
